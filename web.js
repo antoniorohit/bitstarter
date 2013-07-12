@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
  var buffer = new Buffer(100);
  buffer = fs.readFile("$HOME/bitstarter/index.html");
  var string = new String(100);
- string = buffer.toString();
+ string = buffer;
  response.send(string);
 });
 
