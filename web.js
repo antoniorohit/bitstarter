@@ -8,7 +8,8 @@ app.get('/', function(request, response) {
 
  var buffer = new Buffer(100);
  buffer = fs.readFile("$HOME/bitstarter/index.html");
- var string = buffer.toString('utf8');
+ var string = new String(100);
+ string = buffer.toString('utf8');
  response.send(string);
 });
 
