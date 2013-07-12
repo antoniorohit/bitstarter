@@ -5,11 +5,9 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 
-// var buffer = new Buffer(100);
-// buffer = fs.readFile("$HOME/bitstarter/index.html");
-// var string = new String(100);
-// string = buffer;
-  response.send("ABC");
+ var buffer = new Buffer(fs.readFile("$HOME/bitstarter/index.html");
+ var string = new String(buffer);
+  response.send(string);
 });
 
 var port = process.env.PORT || 5000;
