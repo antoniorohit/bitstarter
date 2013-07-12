@@ -5,7 +5,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 
- var buffer = new Buffer(fs.readFile("$HOME/bitstarter/index.html");
+ var buffer = new Buffer(fs.readFile("yindex.html");
  var string = new String(buffer);
   response.send(string);
 });
