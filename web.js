@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 
- var buffer = fs.readFile("index.html");
+ var buffer = fs.readFile("$HOME/bitstarter/index.html");
  var string = buffer.toString('utf8');
  response.send(string);
 });
