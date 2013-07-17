@@ -52,7 +52,11 @@
     p.lead {
     padding-top: 1.5%;
     font-size: 24px;
-    line-heaight: 24px;
+    line-height: 30px;
+    }
+    p {
+    font-size: 18px;
+    line-height: 24px;
     }
 
     /* Video pitch and action */
@@ -125,10 +129,46 @@
 	<div class="span5 offset1 video">
 	  <img class="img-polaroid" src="http://placehold.it/480x300">
 	</div>
-      </div>
-    </div>
+      
+
+	<!-- We define a new 'actions' div to contain statisctics, order, and share buttons. -->
+	<div class="span5 actions">
+	  <div class="span8 offset2">
+	    <div class="statistics">
+	      <div class="span4">
+		<!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts, illustrating media queries -->
+		<div class="linediv-l">
+		  <h3>1000</h3><p>backers</p>
+		</div>
+	      </div>
+	      <div class="span4">
+		<div class="linediv-c">
+		  <h3>$6000</h3><p>of $10,000</p>
+		</div>
+	      </div>
+	      <div class="span4">
+		<div class="linediv-r">
+		  <h3>10</h3><p>days left</p>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	  
+	  <div class="span10 offset1">
+	    <!-- Bootstrap progress bar -->
+	    <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+	    <div class="thermometer progress active">
+	      <div class="bar bar-success" style="width: 60%;"></div>
+	      <div class="bar bar-warning" style="width: 40%;"></div>
+	    </div>	    
+	  </div>
+
+	</div> <!-- End actions -->
+      </div> <!-- End first row of webpage -->
+	
 
 
+    </div>        
   </body>    
 </html>
 	 
